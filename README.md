@@ -1,28 +1,6 @@
-<a href="https://zenhub.io"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
-
-uber-dash
+Dash
 ===
-Simple application get a Uber ride using Amazon's dash-button.
-
-
-How does it work?
-===
-I used the `pcap` module to listen what is happening on the `en0` network interface.
-Every time the dash button wakes up, it sends ARP probes to the network to identify himself.
-By catching those packets, we are able to trigger virtually anything.
-I decided to use `Uber API` in order to get my daily Uber ride.
-
-Installation and setup
-===
- - Create an app on [Uber](https://developer.uber.com/dashboard) in order to consume their API.
- - Modify `./src/config.js` with your dash button MAC address, your Uber application credentials and the start/end location of your drive 
- - `$ npm install`
- - `$ sudo ./uber-dash.js` #root needed to monitor the network AFAIK
- - Visit `http://localhost:3000/login` to allow the app to request Uber rides for you then close the tab
- - Press the button
- - Get in the car!
-
-
+Simple application to do stuff with the amazon dash
 
 License
 ===
